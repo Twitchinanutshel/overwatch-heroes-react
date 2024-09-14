@@ -16,7 +16,7 @@ const HeroPage = () => {
   return (
     <>
       <div className='absolute top-0 right-0 p-4'>
-        <Link to='/overwatch-heroes-react/' className='text-3xl font-bold mb-4'>Go Back</Link>
+        <Link to='/' className='text-3xl font-bold mb-4'>Go Back</Link>
       </div>
       <div className='p-4'>
         <h1 className='text-3xl font-bold mb-4'>{hero.name}</h1>
