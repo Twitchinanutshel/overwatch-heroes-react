@@ -12,13 +12,16 @@ function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
-        <Route path='/overwatch-heroes-react' element={<HomePage />} />
+        <Route path='/' element={<HomePage />} />
         <Route path='/:name' element={<HeroPage />} />
       </>
-    )
-  )
+    ),
+    {
+      basename: '/overwatch-heroes-react/'
+    }
+  );
 
   return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
